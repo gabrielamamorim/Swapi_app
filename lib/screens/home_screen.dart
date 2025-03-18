@@ -30,7 +30,7 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(
         title: const Text(
           'The Star Wars Characters',
-          style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+          style: TextStyle(color: Colors.yellow, fontWeight: FontWeight.bold, fontSize: 50),
         ),
         centerTitle: true,
         backgroundColor: Colors.black, // Cor para combinar com Star Wars
@@ -101,10 +101,6 @@ class _HomeScreenState extends State<HomeScreen> {
                       style: const TextStyle(fontWeight: FontWeight.bold),
                     ),
                     subtitle: Text('Gender: ${character.gender}'),
-                    trailing: const Icon(
-                      Icons.arrow_forward_ios,
-                      color: Colors.black54,
-                    ),
                   ),
                 );
               },

@@ -20,28 +20,18 @@ class CharacterDetailScreen extends StatelessWidget {
         backgroundColor: Colors.white, 
               ),
       body: Container(
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            colors: [Colors.black, Colors.indigo.shade900, Colors.deepPurple.shade900],
-          ),
-        ),
         padding: const EdgeInsets.all(16.0),
+        child: Center(
         child: Column(
           children: [
             const SizedBox(height: 20),
-            Text(
-              character.name,
-              style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
-            ),
             const SizedBox(height: 12),
             Text("Altura: ${character.height} cm"),
             Text("Peso: ${character.mass} kg"),
-            Text("Gênero: ${character.gender}"),
-            Text("Ano de nascimento: ${character.birth_year}"),
+            Text("Gênero: ${character.gender}")
           ],
         ),
+        )
       ),
     );
   }

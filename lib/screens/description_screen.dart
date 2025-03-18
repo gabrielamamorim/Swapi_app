@@ -37,10 +37,6 @@ class _DescriptionScreenState extends State<DescriptionScreen> {
                   style: const TextStyle(fontSize: 20)),
                   Text("Mass: ${character.mass}", 
                   style: const TextStyle(fontSize: 20)),
-                  Text("Hair Color: ${character.hair_color}", 
-                  style: const TextStyle(fontSize: 20)),
-                  Text("Birth Year: ${character.birth_year}",
-                  style: const TextStyle(fontSize: 20)),
                 ],
               )
             ],
